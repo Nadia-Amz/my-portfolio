@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navigation-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #393838;
+    position: relative;
+    width: 100%;
+    padding: 10px 20px;
+}
+.sticky
+{
+    position: fixed;
+    box-shadow: 0px 0px 10px rgb(0 0 0/10%);
+    top: 0;
+    z-index: 2;
+    transition: .3s ease-in-out;
+}
+.logoImage{
+    object-fit: cover;
+    height: auto;
+    width: 6rem;
+    cursor: pointer;
+}
+
+.navigation-bar ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+    padding: 10px 20px;
+}
+
+.navigation-bar ul li{
+    color: #F3F4E7;
+    display: inline-block;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.active{
+    position: relative;
+    text-decoration: none;
+}
+.active:after {
+    content: "";
+    position: absolute;
+    background-color:#F3F4E7;
+    font-size: small;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.active:hover:after {
+    width: 100%;
+}
+.main-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background-color: #393838;
+    position: relative;
+}
+.profil-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+
+}
+.profil{
+    width: 25rem;
+    height: auto;
+    border-radius: 50%;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: aqua;
+}
+.text p{
+    font-size: 40px;
+    padding: 25px 50px;
+    width: 100%;
+    color: #F3F4E7;
+    letter-spacing: 1px;
+}
