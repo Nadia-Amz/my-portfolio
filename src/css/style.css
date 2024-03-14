@@ -109,11 +109,8 @@ body{
 .about-container h1,
 .projects-container h1{
     text-align: center;
-    font-size: 5rem;
-    margin-top: 15rem;
-    text-shadow: 1px 13px 5px #aba8a8,
-    1px 3px 0 #969696
-    ;
+    font-size: 3rem;
+    opacity: 0.5;
     font-family: "Roboto", sans-serif;
 }
 .about-section,
@@ -138,6 +135,7 @@ body{
     font-size: 30rem;
     width: 100%;
     height: auto;
+    left: 0;
     opacity: 0.5;
 }
 .project-cards{
@@ -149,8 +147,8 @@ body{
 .card{
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    justify-content: flex-start;
+    align-items: center;
     border-radius: 16px;
     background-color: #F3F4E7;
     width: 90%;
@@ -158,31 +156,53 @@ body{
 .card h3{
     font-size: 30px;
     font-family: "Roboto", sans-serif;
-    margin-left: 2rem;
     margin-top: 2rem;
 }
 .card p{
     font-size: 25px;
     font-family: "Dancing Script", cursive;
-    margin-left: 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .languages{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 1rem;
-    margin-left: 2rem;
-
 }
 .languages img{
     width: 2rem;
     height: auto;
+    margin-right: 1rem;
 }
 .card video{
     display: flex;
     justify-content: center;
-    width: 70%;
+    align-items: center;
+    width: 90%;
     height: auto;
+    margin-top: 1rem;
 }
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.icons a {
+    font-size: 25px;
+    color: #000000;
+    margin-right: 2rem;
+}
+.icons a:hover{
+    text-decoration: underline 0.5px;
+}
+.icon{
+    margin-left: 0.5rem;
+}
+
+
 
