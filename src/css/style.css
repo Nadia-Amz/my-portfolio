@@ -147,11 +147,12 @@ body{
 .card{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     border-radius: 16px;
     background-color: #F3F4E7;
     width: 90%;
+    margin-top: 5rem;
 }
 .card h3{
     font-size: 30px;
