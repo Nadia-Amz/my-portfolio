@@ -5,7 +5,7 @@ function about() {
   return (
     <>
     <section className="about-container">
-      <div className="about-section">
+      <div className="about-section" id="about">
         <div className="number">
         <p>01</p>
         </div>

@@ -17,7 +17,7 @@ function Projects() {
   return (
     <>
       <section className="projects-container">
-        <div className="ptoject-section">
+        <div className="ptoject-section" >
           <div className="number">
             <p>02</p>
           </div>
@@ -26,7 +26,7 @@ function Projects() {
             <p>Each project is a unique piece of development.</p>
           </div>
         </div>
-        <div className="project-cards">
+        <div className="project-cards" id="projects">
           <div className="card">
             <h3>Netflix Clone</h3>
             <p>

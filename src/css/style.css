@@ -10,6 +10,8 @@ body{
 
 }
 
+/* header section*/
+
 .navigation-bar{
     display: flex;
     flex-direction: row;
@@ -69,6 +71,9 @@ body{
 .active:hover:after {
     width: 100%;
 }
+
+/* main section */
+
 .main-section{
     display: flex;
     flex-direction: row;
@@ -106,8 +111,12 @@ body{
     color: #F3F4E7;
     letter-spacing: 1px;
 }
+
+/* about & projects section*/
+
 .about-container h1,
-.projects-container h1{
+.projects-container h1,
+.contact-container h1{
     text-align: center;
     font-size: 3rem;
     opacity: 0.5;
@@ -121,7 +130,8 @@ body{
     align-items: center;
 }
 .about-section p,
-.ptoject-section p{
+.ptoject-section p,
+.contact-container p{
     font-size: 35px;
     font-family: "Dancing Script", cursive;
     padding: 25px 50px;
@@ -203,6 +213,72 @@ body{
 }
 .icon{
     margin-left: 0.5rem;
+}
+
+/* Contact section*/
+
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+}
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+}
+.contact-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+}
+.contact-giticon,
+.contact-linkicon,
+.contact-mailicon{
+    font-size: 3rem;
+    color: #F3F4E7;
+    transition: 0.5s;
+}
+.contact-linkicon:hover{
+    transform: translateY(-10px);
+    color: #0077B5;
+}
+.contact-giticon:hover{
+    transform: translateY(-10px);
+    color:#000000;
+}
+.contact-mailicon:hover{
+    transform: translateY(-10px);
+    color: #56baff;
+}
+
+/* scroll to top icon*/
+
+.top-button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100px;
 }
 
 
