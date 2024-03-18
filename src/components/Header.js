@@ -18,7 +18,7 @@ function Header() {
     <>
       <div className={sticky ? "navigation-bar sticky" : "navigation-bar"}>
         <a href="/">
-          <img className="logoImage" src={logo2} alt=""></img>
+          <p className="logoImage">NA.</p>
         </a>
         <ul>
           <a href="/">
@@ -40,21 +40,10 @@ function Header() {
               to="projects"
               spy={true}
               smooth={true}
-              offset={-150}
+              offset={-100}
               duration={700}
             >
               Projects
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={-150}
-              duration={700}
-            >
-              Contact me
             </Link>
           </li>
         </ul>

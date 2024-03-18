@@ -17,10 +17,7 @@ function Projects() {
   return (
     <>
       <section className="projects-container">
-        <div className="ptoject-section" >
-          <div className="number">
-            <p>02</p>
-          </div>
+        <div className="project-section" >
           <div className="paragraph">
             <h1>Projects</h1>
             <p>Each project is a unique piece of development.</p>
@@ -47,7 +44,7 @@ function Projects() {
               muted
             />
             <div className="icons">
-              <a href="https://github.com/Nadia-Amz/netflix" target="_blank">
+              <a href="https://github.com/Nadia-Amz/netflix" target="_blank" rel="noreferrer">
                 Code
                 <FontAwesomeIcon icon={faGithub} className="icon" />
               </a>
@@ -82,11 +79,11 @@ function Projects() {
               muted
             />
             <div className="icons">
-              <a href="https://github.com/Nadia-Amz/little-lemon-web" target="_blank">
+              <a href="https://github.com/Nadia-Amz/little-lemon-web" target="_blank" rel="noreferrer">
                 Code
                 <FontAwesomeIcon icon={faGithub} className="icon" />
               </a>
-              <a href="https://nadia-amz.github.io/little-lemon-web/" target="_blank">
+              <a href="https://nadia-amz.github.io/little-lemon-web/" target="_blank" rel="noreferrer">
                 Live Demo
                 <FontAwesomeIcon
                   icon={faArrowUpRightFromSquare}
@@ -117,11 +114,11 @@ function Projects() {
               muted
             />
             <div className="icons">
-              <a href="https://github.com/Nadia-Amz/mangata-gallo/tree/master" target="_blank">
+              <a href="https://github.com/Nadia-Amz/mangata-gallo/tree/master" target="_blank" rel="noreferrer">
                 Code
                 <FontAwesomeIcon icon={faGithub} className="icon" />
               </a>
-              <a href="https://nadia-amz.github.io/mangata-gallo/" target="_blank">
+              <a href="https://nadia-amz.github.io/mangata-gallo/" target="_blank" rel="noreferrer">
                 Live Demo
                 <FontAwesomeIcon
                   icon={faArrowUpRightFromSquare}
@@ -151,11 +148,11 @@ function Projects() {
               muted
             />
             <div className="icons">
-              <a href="https://github.com/Nadia-Amz/cissp-/tree/master" target="_blank">
+              <a href="https://github.com/Nadia-Amz/cissp-/tree/master" target="_blank" rel="noreferrer">
                 Code
                 <FontAwesomeIcon icon={faGithub} className="icon" />
               </a>
-              <a href="http://getcissp.patchthenet.com/" target="_blank">
+              <a href="http://getcissp.patchthenet.com/" target="_blank" rel="noreferrer">
                 Live Demo
                 <FontAwesomeIcon
                   icon={faArrowUpRightFromSquare}

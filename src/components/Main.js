@@ -1,6 +1,10 @@
 import React from "react";
 import "../css/style.css";
 import profil from "../images/profil.jpg";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Main() {
   return (
@@ -12,6 +16,35 @@ function Main() {
             <p>Hello,</p>
             <p>I'm Nadia</p>
             <h2>Front-End Developer</h2>
+            <div className="contact-area">
+              <a
+                href="https://github.com/Nadia-Amz"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faGithub} className="contact-giticon" />
+              </a>
+              <a
+                href="https://fr.linkedin.com/in/nadia-amouz-38435825b"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  className="contact-linkicon"
+                />
+              </a>
+              <a
+                href="mailto: nadiaamouz@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  className="contact-mailicon"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
