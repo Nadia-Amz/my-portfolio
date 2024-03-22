@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../css/style.css";
-import logo2 from "../images/logo-2 vertical.png";
 import { Link } from "react-scroll";
 
 function Header() {

@@ -4,6 +4,8 @@ import Main from "../components/Main.js";
 import About from "../components/About.js";
 import Projects from "../components/Projects.js";
 import Topbutton from "../components/Topbutton.js";
+import Footer from "../components/Footer.js";
+
 
 function Home() {
   return (
@@ -13,6 +15,7 @@ function Home() {
       <About />
       <Projects />
       <Topbutton />
+      <Footer />
     </>
   );
 }
