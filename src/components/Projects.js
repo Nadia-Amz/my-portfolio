@@ -17,7 +17,7 @@ function Projects() {
   return (
     <>
       <section className="projects-container">
-        <div className="project-section" >
+        <div className="project-section">
           <div className="paragraph">
             <h1>Projects</h1>
             <p>Each project is a unique piece of development.</p>
@@ -44,7 +44,11 @@ function Projects() {
               muted
             />
             <div className="icons">
-              <a href="https://github.com/Nadia-Amz/netflix" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/Nadia-Amz/netflix"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Code
                 <FontAwesomeIcon icon={faGithub} className="icon" />
               </a>
@@ -63,7 +67,8 @@ function Projects() {
           <div className="card">
             <h3>Little Lemon restaurant</h3>
             <p>
-              I completed this project that involved creating an online table reservation.
+              Little Lemon restaurant's web site enables clients to book tables
+              for several occasions.
             </p>
             <div className="languages">
               <img className="logohtml" src={html} alt=""></img>
@@ -79,11 +84,19 @@ function Projects() {
               muted
             />
             <div className="icons">
-              <a href="https://github.com/Nadia-Amz/little-lemon-web" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/Nadia-Amz/little-lemon-web"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Code
                 <FontAwesomeIcon icon={faGithub} className="icon" />
               </a>
-              <a href="https://nadia-amz.github.io/little-lemon-web/" target="_blank" rel="noreferrer">
+              <a
+                href="https://nadia-amz.github.io/little-lemon-web/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Live Demo
                 <FontAwesomeIcon
                   icon={faArrowUpRightFromSquare}
@@ -98,8 +111,10 @@ function Projects() {
           <div className="card">
             <h3>Mangata & Gallo Jewelry</h3>
             <p>
-            Mangata and Gallo is a jewelry store that specializes in special occasions like engagements, weddings and anniversaries.  
-            Mangata & Gallo's selection of jewelry is known for its high-quality and classic look.</p>
+              Mangata and Gallo is a jewelry website that facilitates online
+              shopping for special occasions, such as engagement, anniversaries,
+              and weddings..{" "}
+            </p>
             <div className="languages">
               <img className="logohtml" src={html} alt=""></img>
               <img className="logocss" src={css} alt=""></img>
@@ -114,11 +129,19 @@ function Projects() {
               muted
             />
             <div className="icons">
-              <a href="https://github.com/Nadia-Amz/mangata-gallo/tree/master" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/Nadia-Amz/mangata-gallo/tree/master"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Code
                 <FontAwesomeIcon icon={faGithub} className="icon" />
               </a>
-              <a href="https://nadia-amz.github.io/mangata-gallo/" target="_blank" rel="noreferrer">
+              <a
+                href="https://nadia-amz.github.io/mangata-gallo/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Live Demo
                 <FontAwesomeIcon
                   icon={faArrowUpRightFromSquare}
@@ -133,7 +156,11 @@ function Projects() {
           <div className="card">
             <h3>Get CISSP</h3>
             <p>
-            This website is developed to help you prepare for your CISSP exam. It is intended to serve as a complementary guide to help you fill any gaps that you might have and put you on the straight path toward your certification.</p>
+              The purpose of this website is to assist users in preparing for
+              the CISSP exam. The aim is to provide a complementary guide to
+              assist users in filling any gaps they may have and guide them
+              towards achieving their certification.
+            </p>{" "}
             <div className="languages">
               <img className="logohtml" src={html} alt=""></img>
               <img className="logocss" src={css} alt=""></img>
@@ -148,11 +175,19 @@ function Projects() {
               muted
             />
             <div className="icons">
-              <a href="https://github.com/Nadia-Amz/cissp-/tree/master" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/Nadia-Amz/cissp-/tree/master"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Code
                 <FontAwesomeIcon icon={faGithub} className="icon" />
               </a>
-              <a href="http://getcissp.patchthenet.com/" target="_blank" rel="noreferrer">
+              <a
+                href="http://getcissp.patchthenet.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Live Demo
                 <FontAwesomeIcon
                   icon={faArrowUpRightFromSquare}
