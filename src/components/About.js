@@ -7,7 +7,7 @@ function about() {
     <>
       <section className="about-container">
         <div className="about-section" id="about">
-          <img src={aboutphoto} alt=""></img>
+          <img src={aboutphoto} alt="" className="about-photo"/>
           <div className="paragraph">
             <h1>About</h1>
             <p>

@@ -12,7 +12,7 @@ body{
 .navigation-bar{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     backdrop-filter: blur(7px) ;
     background-color: rgba(255, 255, 255, 0.20);
@@ -63,15 +63,55 @@ body{
     color: #56baff;
 }
 
+/* hamburger menu*/
+
+.navigation-bar ion-icon{
+    display: none;
+    color: #393838;
+    font-size: 40px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.navigation-bar ion-icon:hover {
+    opacity: 1;
+}
+
+.navigation-bar ul.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    top: 62px;
+    right: 0;
+    background-color: #000000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 2;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    transition: .3s ease-in-out;
+}
+
+.navigation-bar ul.menu li {
+  margin: 15px 0;
+  display: flex;
+}
+
+.navigation-bar ul.menu .close{
+    display: none;
+}
+
 /* main section */
 
 .main-section{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
-    position: relative;
+    /* position: relative; */
 }
 .profil-section{
     display: flex;
@@ -97,7 +137,7 @@ body{
 .text p,h1,h2{
     font-size: 40px;
     font-family: "Dancing Script", cursive;
-    padding: 10px 50px;
+    padding: 5px 50px;
     width: 100%;
     color: #393838;
     letter-spacing: 1px;
@@ -154,14 +194,17 @@ body{
 }
 .about-section p,
 .project-section p{
-    font-size: 30px;
-    font-family: "Dancing Script", cursive;
+    font-size: 25px;
+    font-family: "Roboto";
     padding: 5px 25px;
     width: 100%;
     letter-spacing: 1px;
     margin-top: 2rem;
     text-align: center;
     color: #000000;
+}
+.about-photo{
+    width: 30rem;
 }
 .project-section{
     margin-top: 5rem;
@@ -191,12 +234,11 @@ body{
     margin-top: 2rem;
 }
 .card p{
-    font-size: 25px;
-    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    font-family: "Roboto";
     padding: 15px 20px;
     text-align: center;
     letter-spacing: 1px;
-    font-weight: bold;
 }
 .languages{
     display: flex;
@@ -252,13 +294,15 @@ body{
     height: 100px;
 }
 
+/* Footer */
+
 .footer-section{
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     padding: 20px 50px;
     background: #3586ff;
@@ -325,6 +369,7 @@ body{
 }
 
 .wave{
+    display: flex;
     position: absolute;
     top: -100px;
     left: 0;
@@ -376,3 +421,61 @@ body{
     }
 }
 
+@media (max-width: 827px){
+    .text p,h1,h2{
+        font-size: 30px;
+    }
+    .profil{
+        width: 20rem;
+    }
+    .about-section p,
+    .project-section p{
+        font-size: 20px;
+   
+    }
+    .about-photo{
+        width: 20rem;
+    }
+}
+
+@media (max-width:735px) {
+    .navigation-bar ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navigation-bar ion-icon {
+        display: block;
+    }
+    .navigation-bar ul li{
+        display: none;
+    }
+    .navigation-bar ul.menu li {
+        font-size: medium;
+        color: #fff;
+    }
+    .text p,h1,h2{
+        text-align: center;
+
+    }
+    .about-section{
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+    }
+    .profil-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .text{
+        margin-top: 1rem;
+    }
+    .contact-area{
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+    .footer-container{
+        justify-content: space-between;
+    }
+}
+ 

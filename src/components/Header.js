@@ -4,6 +4,14 @@ import { Link } from "react-scroll";
 
 function Header() {
   const [sticky, setSticky] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+  const handleClick = () => {
+    setIsOpen(false);
+  };
 
   function stickyNavbar() {
     if (window.scrollY > 0) {
@@ -13,13 +21,20 @@ function Header() {
     }
   }
   window.addEventListener("scroll", stickyNavbar);
+
+  function resizeWindow() {
+    if (window.innerWidth > 735) {
+      setIsOpen(false);
+    }
+  }
+  window.addEventListener("resize", resizeWindow);
   return (
     <>
       <div className={sticky ? "navigation-bar sticky" : "navigation-bar"}>
         <a href="/">
           <p className="logoImage">NA.</p>
         </a>
-        <ul>
+        <ul className={isOpen ? "menu" : ""}>
           <a href="/">
             <li className="active">Home</li>
           </a>
@@ -30,6 +45,8 @@ function Header() {
               smooth={true}
               offset={-150}
               duration={700}
+              onClick={handleClick}
+
             >
               About
             </Link>
@@ -41,11 +58,16 @@ function Header() {
               smooth={true}
               offset={-100}
               duration={700}
+              onClick={handleClick}
+
             >
               Projects
             </Link>
           </li>
         </ul>
+        <div onClick={toggleMenu} className={isOpen ? "close" : "menu"}>
+          <ion-icon name="menu"></ion-icon>
+        </div>
       </div>
     </>
   );
