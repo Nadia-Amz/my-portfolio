@@ -219,7 +219,7 @@ body{
     content: "";
     display: flex;
     width: 30%;
-    height: 3px;
+    height: 2px;
     background-color: #3586ff;
     position: absolute;
     left: 0;
@@ -230,7 +230,7 @@ body{
     content: "";
     display: flex;
     width: 30%;
-    height: 3px;
+    height: 2px;
     background-color: #3586ff;
     position: absolute;
     right: 0;
