@@ -10,7 +10,7 @@ function Main() {
   return (
     <>
       <div className="main-section">
-        <div className="profil-section">
+        <div className="profil-section" id="main">
           <img className="profil" src={profil} alt=""></img>
           <div className="text">
             <p>Hello,</p>

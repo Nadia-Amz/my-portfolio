@@ -60,7 +60,7 @@ body{
     font-weight: bold;
 }
 .navigation-bar ul li:hover{
-    color: #56baff;
+    color: #3586ff;
 }
 
 /* hamburger menu*/
@@ -519,7 +519,6 @@ body{
         padding: 10px 30px;
     }
     .navigation-bar ul.menu {
-        width: 100%;
         height: 600px;
     }
 
@@ -548,5 +547,4 @@ body{
     .text p,h1,h2{
         padding: 5px 30px;
     }
-    
  }

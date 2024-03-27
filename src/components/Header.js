@@ -35,9 +35,19 @@ function Header() {
           <p className="logoImage">NA.</p>
         </a>
         <ul className={isOpen ? "menu" : ""}>
-          <a href="/">
-            <li className="active">Home</li>
-          </a>
+          <li>
+            <Link
+              to="main"
+              spy={true}
+              smooth={true}
+              offset={-150}
+              duration={700}
+              onClick={handleClick}
+            >
+              Home
+            </Link>
+          </li>
+
           <li>
             <Link
               to="about"
@@ -46,7 +56,6 @@ function Header() {
               offset={-150}
               duration={700}
               onClick={handleClick}
-
             >
               About
             </Link>
@@ -59,7 +68,6 @@ function Header() {
               offset={-100}
               duration={700}
               onClick={handleClick}
-
             >
               Projects
             </Link>
