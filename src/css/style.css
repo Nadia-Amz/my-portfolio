@@ -201,13 +201,42 @@ body{
     letter-spacing: 1px;
     margin-top: 2rem;
     text-align: center;
-    color: #000000;
+    color: #393838;
 }
 .about-photo{
     width: 30rem;
 }
 .project-section{
     margin-top: 5rem;
+}
+.paragraph{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+.paragraph::before{
+    content: "";
+    display: flex;
+    width: 30%;
+    height: 3px;
+    background-color: #3586ff;
+    position: absolute;
+    left: 0;
+    align-items: center;
+    margin-top: 2rem;
+}
+.paragraph::after{
+    content: "";
+    display: flex;
+    width: 30%;
+    height: 3px;
+    background-color: #3586ff;
+    position: absolute;
+    right: 0;
+    align-items: center;
+    margin-top: 2rem;
+
 }
 
 .project-cards{
@@ -229,13 +258,14 @@ body{
     margin-top: 5rem;
 }
 .card h3{
-    font-size: 30px;
+    font-size: 2rem;
     font-family: "Roboto", sans-serif;
     margin-top: 2rem;
 }
 .card p{
     font-size: 20px;
     font-family: "Roboto";
+    color: #393838;
     padding: 15px 20px;
     text-align: center;
     letter-spacing: 1px;
@@ -288,10 +318,8 @@ body{
 /* scroll to top icon*/
 
 .top-button{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    height: 100px;
+    position: absolute;
+    z-index: 2000;
 }
 
 /* Footer */
@@ -307,7 +335,6 @@ body{
     padding: 20px 50px;
     background: #3586ff;
     margin-top: 10rem;
-
 }
 .footer-area{
     display: flex;
@@ -329,6 +356,8 @@ body{
         margin-right: 0.5rem;
     }
     #copyright{
+        text-align: center;
+        width: 100%;
         font-family: "roboto";
         font-size: 15px;
         color: #fff;
@@ -342,10 +371,9 @@ body{
 .footer-icons{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     width: 10%;
     height: auto;
-
 }
 .footer-giticon,
 .footer-linkicon,
@@ -455,7 +483,6 @@ body{
     }
     .text p,h1,h2{
         text-align: center;
-
     }
     .about-section{
         display: flex;
@@ -474,8 +501,52 @@ body{
         align-items: center;
         margin-left: 0;
     }
+    
+}
+
+@media (max-width: 600px){
     .footer-container{
-        justify-content: space-between;
+        flex-direction: column;
+
+        #copyright{
+            margin-top: 1rem;
+        }
+    }
+    .footer-icons{
+        margin-top: 2rem;
+    }
+    .footer-section{
+        padding: 10px 30px;
+    }
+    .navigation-bar ul.menu {
+        width: 100%;
+        height: 600px;
+    }
+
+}
+@media(max-width:500px){
+    .about-section p,
+    .project-section p,
+    .card p,
+    .icons a{
+        font-size: 17px;
     }
 }
- 
+ @media(max-width:450px)
+ {
+    
+    .about-container h1,
+    .projects-container h1
+    {
+        font-size: 2rem;
+    }
+    .card h3{
+        font-size: 1.5rem;
+    }
+ }
+ @media (max-width:415px) {
+    .text p,h1,h2{
+        padding: 5px 30px;
+    }
+    
+ }

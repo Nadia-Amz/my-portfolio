@@ -8,7 +8,7 @@ function about() {
       <section className="about-container">
         <div className="about-section" id="about">
           <img src={aboutphoto} alt="" className="about-photo"/>
-          <div className="paragraph">
+          <div>
             <h1>About</h1>
             <p>
               I'm a front-end developer. I'm enthusiastic about crafting
