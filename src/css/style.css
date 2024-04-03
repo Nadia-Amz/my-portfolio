@@ -187,8 +187,8 @@ body{
     justify-content: space-between;
     align-items: center;
     border-radius: 16px;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     height: 500px;
     margin-top: 5rem;
     backdrop-filter: blur(7px) ;
@@ -208,6 +208,7 @@ body{
 }
 .about-photo{
     width: 30rem;
+    border-radius: 50%;
 }
 .project-section{
     margin-top: 5rem;
@@ -452,7 +453,7 @@ body{
     }
 }
 
-@media (max-width: 827px){
+@media (max-width: 939px){
     .text p,h1,h2{
         font-size: 30px;
     }
@@ -495,6 +496,9 @@ body{
         flex-direction: column;
         height: 600px;
     }
+    .about-section p{
+        margin-bottom: 2rem;
+    }
     .profil-section{
         display: flex;
         flex-direction: column;
@@ -536,10 +540,6 @@ body{
     .icons a{
         font-size: 17px;
     }
-}
- @media(max-width:450px)
- {
-    
     .about-container h1,
     .projects-container h1
     {
@@ -548,9 +548,20 @@ body{
     .card h3{
         font-size: 1.5rem;
     }
+}
+ @media(max-width:450px)
+ {
+    .about-photo{
+        width: 18rem;
+    }
+    
  }
- @media (max-width:415px) {
+ @media (max-width:417px) {
     .text p,h1,h2{
         padding: 5px 30px;
     }
+    .card{
+        height: 600px;
+    }
+    
  }
