@@ -4,9 +4,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
-      <BrowserRouter basename="/my-portfolio">
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
-          <Route exact path="/my-portfolio" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </>
