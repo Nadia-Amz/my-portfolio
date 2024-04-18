@@ -1,14 +1,14 @@
 import Home from "./pages/Home.js";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Router>
+      <BrowserRouter basename="/my-portfolio">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route exact path="/my-portfolio" element={<Home />} />
         </Routes>
-      </Router>
+      </BrowserRouter>
     </>
   );
 }
