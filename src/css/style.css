@@ -65,16 +65,13 @@ body{
 
 /* hamburger menu*/
 
-.navigation-bar ion-icon{
+.ion-icon{
     display: none;
     color: #393838;
     font-size: 40px;
     cursor: pointer;
-    opacity: 0.8;
 }
-.navigation-bar ion-icon:hover {
-    opacity: 1;
-}
+
 
 .navigation-bar ul.menu {
     display: flex;
@@ -478,7 +475,7 @@ body{
         flex-direction: column;
         justify-content: center;
     }
-    .navigation-bar ion-icon {
+    .ion-icon {
         display: block;
     }
     .navigation-bar ul li{

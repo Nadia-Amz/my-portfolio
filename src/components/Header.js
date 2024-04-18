@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../css/style.css";
 import { Link } from "react-scroll";
+import Hamburger from "hamburger-react";
 
 function Header() {
   const [sticky, setSticky] = useState(false);
@@ -31,13 +32,7 @@ function Header() {
   return (
     <>
       <div className={sticky ? "navigation-bar sticky" : "navigation-bar"}>
-        <Link
-          to="main"
-          spy={true}
-          smooth={true}
-          offset={-150}
-          duration={700}
-        >
+        <Link to="main" spy={true} smooth={true} offset={-150} duration={700}>
           <p className="logoImage">NA.</p>
         </Link>
         <ul className={isOpen ? "menu" : ""}>
@@ -80,7 +75,9 @@ function Header() {
           </li>
         </ul>
         <div onClick={toggleMenu} className={isOpen ? "close" : "menu"}>
-          <ion-icon name="menu"></ion-icon>
+          <div className="ion-icon">
+          <Hamburger toggled={isOpen} toggle={setIsOpen}/>
+          </div>
         </div>
       </div>
     </>

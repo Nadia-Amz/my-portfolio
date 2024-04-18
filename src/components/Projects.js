@@ -44,6 +44,7 @@ function Projects() {
               autoPlay
               loop
               muted
+              playsInline
             />
             <div className="icons">
               <a
@@ -88,6 +89,7 @@ function Projects() {
               autoPlay
               loop
               muted
+              playsInline
             />
             <div className="icons">
               <a
@@ -131,6 +133,7 @@ function Projects() {
               autoPlay
               loop
               muted
+              playsInline
             />
             <div className="icons">
               <a
@@ -155,7 +158,7 @@ function Projects() {
             </div>
           </div>
         </div>
-        <div className="project-cards" >
+        <div className="project-cards">
           <div className="card">
             <h3>Netflix Clone</h3>
             <p>
@@ -174,6 +177,7 @@ function Projects() {
               autoPlay
               loop
               muted
+              playsInline
             />
             <div className="icons">
               <a
@@ -194,12 +198,6 @@ function Projects() {
             </div>
           </div>
         </div>
-
-        
-
-        
-
-      
       </section>
     </>
   );
