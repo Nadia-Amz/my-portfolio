@@ -31,9 +31,15 @@ function Header() {
   return (
     <>
       <div className={sticky ? "navigation-bar sticky" : "navigation-bar"}>
-        <a href="/">
+        <Link
+          to="main"
+          spy={true}
+          smooth={true}
+          offset={-150}
+          duration={700}
+        >
           <p className="logoImage">NA.</p>
-        </a>
+        </Link>
         <ul className={isOpen ? "menu" : ""}>
           <li>
             <Link
