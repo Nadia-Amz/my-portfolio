@@ -9,6 +9,7 @@ body{
 }
 
 /* header section*/
+
 .navigation-bar{
     display: flex;
     flex-direction: row;
@@ -16,12 +17,10 @@ body{
     align-items: center;
     backdrop-filter: blur(7px) ;
     background-color: rgba(255, 255, 255, 0.20);
-    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);     
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
     position: relative;
     width: 100%;
     padding: 10px 20px;
-
-        
 }
 .logoImage{
     font-size: 35px;
@@ -108,7 +107,6 @@ body{
     align-items: center;
     width: 100%;
     height: auto;
-    /* position: relative; */
 }
 .profil-section{
     display: flex;
@@ -169,6 +167,7 @@ body{
     transform: translateY(-10px);
     color: #56baff;
 }
+
 /* about & projects section*/
 
 .about-container h1,
@@ -190,7 +189,7 @@ body{
     margin-top: 5rem;
     backdrop-filter: blur(7px) ;
     background-color: rgba(255, 255, 255, 0.20);
-    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);     
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
 }
 .about-section p,
 .project-section p{
@@ -239,7 +238,6 @@ body{
     margin-top: 2rem;
 
 }
-
 .project-cards{
     display: flex;
     flex-direction: column;
@@ -254,7 +252,7 @@ body{
     border-radius: 16px;
     backdrop-filter: blur(7px) ;
     background-color: rgba(255, 255, 255, 0.20);
-    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);     
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
     width: 90%;
     margin-top: 5rem;
 }
@@ -311,10 +309,6 @@ body{
 .icon{
     margin-left: 0.5rem;
 }
-
-
-
-
 
 /* scroll to top icon*/
 
@@ -437,9 +431,8 @@ body{
         background-position-x: 1000px;
     }
     100%{
-        background-position-x:0px; 
+        background-position-x:0px;
     }
-    
 }
 @keyframes animateWave-02 {
     0%{
@@ -449,6 +442,8 @@ body{
         background-position-x: 1000px;
     }
 }
+
+/*Media query*/
 
 @media (max-width: 939px){
     .text p,h1,h2{
@@ -460,7 +455,6 @@ body{
     .about-section p,
     .project-section p{
         font-size: 20px;
-   
     }
     .about-photo{
         width: 20rem;
@@ -508,7 +502,6 @@ body{
         align-items: center;
         margin-left: 0;
     }
-    
 }
 
 @media (max-width: 600px){
@@ -546,19 +539,16 @@ body{
         font-size: 1.5rem;
     }
 }
- @media(max-width:450px)
- {
+@media(max-width:450px){
     .about-photo{
         width: 18rem;
     }
-    
- }
- @media (max-width:417px) {
+}
+@media (max-width:417px) {
     .text p,h1,h2{
         padding: 5px 30px;
     }
     .card{
         height: 600px;
     }
-    
- }
+}
