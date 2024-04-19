@@ -181,7 +181,7 @@ function Projects() {
             />
             <div className="icons">
               <a
-                href="https://github.com/Nadia-Amz/netflix"
+                href="https://github.com/Nadia-Amz/netflix/tree/master"
                 target="_blank"
                 rel="noreferrer"
               >
