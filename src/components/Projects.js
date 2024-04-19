@@ -188,7 +188,7 @@ function Projects() {
                 Code
                 <FontAwesomeIcon icon={faGithub} className="icon" />
               </a>
-              <a href="#">
+              <a href="https://netflix-clone-nadia-amz.netlify.app">
                 Live Demo
                 <FontAwesomeIcon
                   icon={faArrowUpRightFromSquare}
