@@ -195,7 +195,7 @@ function Projects() {
                   className="icon"
                 />
               </a>
-            </div>cd 
+            </div>
           </div>
         </div>
       </section>
