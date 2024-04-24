@@ -188,7 +188,11 @@ function Projects() {
                 Code
                 <FontAwesomeIcon icon={faGithub} className="icon" />
               </a>
-              <a href="https://clone-website-nadia-amz.netlify.app/">
+              <a
+                href="https://clone-website-nadia-amz.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Live Demo
                 <FontAwesomeIcon
                   icon={faArrowUpRightFromSquare}
