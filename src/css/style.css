@@ -113,24 +113,26 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 5rem;
-    margin-left: 2rem;
+    /* margin-top: 5rem; */
+    /* margin-left: 2rem;
     margin-right: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; */
 }
 .profil{
-    width: 25rem;
+    position:relative;
+    width: 100%;
     height: auto;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 .text{
     display: flex;
     flex-direction: column;
+    position: absolute;
     width: 100%;
     height: auto;
 }
 .text p,h1,h2{
-    font-size: 40px;
+    font-size: 55px;
     font-family: "Dancing Script", cursive;
     padding: 5px 50px;
     width: 100%;

@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/style.css";
-import profil from "../images/profil.jpg";
+import profile from "../images/profile.jpg";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -11,7 +11,7 @@ function Main() {
     <>
       <div className="main-section">
         <div className="profil-section" id="main">
-          <img className="profil" src={profil} alt=""></img>
+          <img className="profil" src={profile} alt=""></img>
           <div className="text">
             <p>Hello,</p>
             <p>I'm Nadia</p>
